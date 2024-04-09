@@ -1,0 +1,680 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+h1,
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url("../img/background.svg");
+  color: white;
+}
+
+/* Area da barra de menu -------------------------- */
+#MENU {
+  background-color: white;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  border-bottom: 0.1rem solid #eee;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  height: 60px;
+  margin: 0px auto;
+}
+#logo {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+}
+#logo a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#logo span {
+  font-size: 3rem;
+  width: 10rem;
+  margin-left: 2rem;
+}
+
+.options {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.options li {
+  margin: 2rem;
+}
+
+.options a {
+  text-decoration: none;
+}
+
+/* AREA DE SITE -------------------------- */
+
+.fundo-branco {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.largura-site {
+  max-width: 120rem;
+  margin: 0px auto;
+}
+
+.Area-site {
+  padding: 5rem 3rem;
+  max-width: 120rem;
+  min-height: 100vh;
+  margin: 0px auto;
+}
+
+.Area-site-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 3rem;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.Area-site-tabela {
+  padding-top: 0.5rem;
+  max-width: 120rem;
+  margin: 0px auto;
+}
+
+.Area-site-contact {
+  padding: 6rem 3rem;
+  padding-bottom: 2rem;
+  max-width: 120rem;
+  min-height: 100vh;
+  margin: 0px auto;
+}
+
+.conteiner-home {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  padding-top: 15rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-size: 2.2rem;
+  padding-top: 8rem;
+}
+
+.home h1 {
+  width: 90%;
+  margin-top: 1rem;
+  font-size: 6rem;
+  line-height: 8rem;
+}
+
+.home p {
+  max-width: 100%;
+  font-size: 2.1rem;
+  margin-top: 2rem;
+  text-align: content;
+  padding: 0 2rem 0 0;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.img img {
+  max-width: 100%;
+}
+
+/* INTRO ---------------- */
+#intro {
+  background-color: white;
+}
+
+.intro {
+  position: relative;
+  top: 8rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70rem;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 8rem;
+  padding: 2rem;
+}
+
+.intro p {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
+/* Top-3  ------------------------------*/
+
+.titulo-top3 {
+  width: 100%;
+  text-align: left;
+  padding-top: 20rem;
+  font-size: 5rem;
+}
+
+.titulo-top3 p {
+  font-size: 3rem;
+}
+
+.grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.caixas {
+  font-size: 2.5rem;
+}
+
+.caixas h1 {
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.titulo1::before {
+  content: "1";
+  margin-right: 1rem;
+  display: inline-block;
+  font-size: 7rem;
+  font-style: italic;
+  transform: rotate(5deg);
+}
+
+.titulo2::before {
+  content: "2";
+  margin-right: 1rem;
+  display: inline-block;
+  font-size: 7rem;
+  font-style: italic;
+  transform: rotate(5deg);
+}
+
+.titulo3::before {
+  content: "3";
+  margin-right: 1rem;
+  display: inline-block;
+  font-size: 7rem;
+  font-style: italic;
+  transform: rotate(5deg);
+}
+
+/* Galeria ------------------ */
+
+.gallery h1 {
+  text-transform: uppercase;
+  font-size: 6rem;
+  padding-top: 5rem;
+}
+
+.gallery p {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  margin-top: 10rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 4rem;
+}
+
+.gallery-img {
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.gallery-grid img {
+  transition: all 300ms ease-in-out;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-grid img:hover {
+  transform: translate(-3%, 3%) scale(1.2);
+}
+
+/* Work ----------------- */
+
+#pricing {
+}
+
+#pricing h1 {
+  font-size: 6rem;
+}
+
+#pricing p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.responisve-table {
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 36rem;
+  background-color: rgba(128, 128, 128, 0.308);
+  margin-top: 2.5rem;
+  text-transform: capitalize;
+  font-size: 3rem;
+  text-align: left;
+  position: relative;
+}
+
+caption {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+thead td {
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.01);
+}
+
+tr {
+}
+
+td {
+  background-color: white;
+  padding: 0.5rem;
+  width: 35rem;
+}
+
+/* CONTATO ----------------------- */
+
+.contato-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+}
+
+.contato h1 {
+  font-size: 6rem;
+  padding-bottom: 5rem;
+}
+
+.contato p {
+  font-size: 2rem;
+}
+
+.contato img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-form {
+  grid-column: span 2;
+}
+
+.contact-form fieldset {
+  border: none;
+  padding-top: 2rem;
+}
+
+.form-grid {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.form-grid label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  flex: 1 1 40rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: -2px 2px 10px rgb(0, 195, 255);
+}
+
+body .full-width {
+  min-width: 100%;
+  flex-grow: 1 1 100%;
+}
+
+button {
+  transition: all 300ms ease-in-out;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a1128;
+  border: 0.5rem solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button:hover {
+  transition: all 300ms ease-in-out;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 0.5rem solid white;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* RODAPÉ ------------- */
+
+.rodape {
+  max-width: 100vw;
+  height: 9rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.rodape img {
+  display: inline;
+  width: 5rem;
+  height: 5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+/* QUERRY -------------- */
+
+@media (max-width: 1000px) {
+  /* HOME ---------------- */
+  .conteiner-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding-top: 2rem;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2.2rem;
+    max-width: 100%;
+  }
+
+  .home h1 {
+    text-align: center;
+    width: 100%;
+    padding: 0 3rem;
+    font-size: 4rem;
+  }
+
+  .home p {
+    max-width: 100%;
+    padding: 0 3rem;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+  /* Top-3  ------------------------------*/
+
+  .titulo-top3 {
+    width: 100%;
+    text-align: left;
+    padding-top: 9rem;
+    font-size: 5rem;
+  }
+
+  .titulo-top3 p {
+    font-size: 3rem;
+  }
+
+  .grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .caixas {
+    font-size: 2.5rem;
+  }
+
+  .caixas h1 {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+
+  .titulo1::before {
+    content: "1";
+    margin-right: 1rem;
+    display: inline-block;
+    font-size: 7rem;
+    font-style: italic;
+    transform: rotate(5deg);
+  }
+
+  .titulo2::before {
+    content: "2";
+    margin-right: 1rem;
+    display: inline-block;
+    font-size: 7rem;
+    font-style: italic;
+    transform: rotate(5deg);
+  }
+
+  .titulo3::before {
+    content: "3";
+    margin-right: 1rem;
+    display: inline-block;
+    font-size: 7rem;
+    font-style: italic;
+    transform: rotate(5deg);
+  }
+
+  /* Galeria ------------------ */
+
+  .gallery h1 {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 6rem;
+    padding-top: 5rem;
+  }
+
+  .gallery p {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .gallery-grid {
+    margin: 0 auto;
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .gallery-grid img {
+    transition: all 300ms ease-in-out;
+  }
+
+  .gallery-grid img:hover {
+    transform: translate(-3%, 3%) scale(1.2);
+  }
+
+  /* Work ----------------- */
+
+  #pricing h1 {
+    font-size: 6rem;
+  }
+
+  #pricing p {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .responisve-table {
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 5rem;
+  }
+
+  table {
+    min-width: 36rem;
+    background-color: rgba(128, 128, 128, 0.308);
+    margin-top: 2.5rem;
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: left;
+    position: relative;
+  }
+
+  caption {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  thead td {
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.01);
+  }
+
+  tr {
+  }
+
+  td {
+    background-color: white;
+    padding: 0.5rem;
+    width: 35rem;
+  }
+
+  /* CONTATO ----------------------- */
+
+  .contato-intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contato h1 {
+    font-size: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .contato p {
+    font-size: 2rem;
+  }
+
+  .contato img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
